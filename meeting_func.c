@@ -151,7 +151,7 @@ void find_day_month_year(char describe[],char *day, int *month, int *year)
 
 void find_year_month_cent_codes(int month,int year,int *yy,int *mcode,int *ccode)
 {
-    int cc;
+    int cc = 0;
     for(int i=0;i<4;i++)
     {
         switch(i)
