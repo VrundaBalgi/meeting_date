@@ -7,10 +7,10 @@ int main()
     char day[10];
     int date = 0,month,year;
     int yy=0,mcode=0,ccode=0;
-    int k,leap;
+    int k=0,leap=0;
 
     printf("\nEnter the description of meetup date as per below examples(case sensitive):\nEx1: The monteenth of January 2017\nEx2: The first Sunday of May 2012\nEx3: The last Friday of August 2013:\n");
-    scanf(" %[^\n]",describe);
+    scanf(" %100[^\n]",describe);
 
     find_day_month_year(describe,day,&month,&year);
 
